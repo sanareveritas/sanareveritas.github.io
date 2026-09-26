@@ -643,6 +643,10 @@ nav a:hover {
     font-weight: 600;
 
     color: var(--navy);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.5;
 }
 
 .claim-form input,
@@ -660,8 +664,18 @@ nav a:hover {
     background: white;
 }
 
-.claim-form input[type="radio"] {
-    vertical-align: text-top;
+.claim-form input[type="radio"],
+.claim-form input[type="checkbox"] {
+    width: auto;
+    min-width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    flex-shrink: 0;
+    accent-color: var(--navy);
 }
 
 .claim-form textarea {
